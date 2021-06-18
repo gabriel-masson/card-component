@@ -1,0 +1,117 @@
+/*estrutura html*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     
+}
+
+body{background: hsl(233, 47%, 7%); }
+html{Font-size: 15px;}
+/*------------card main----------------*/
+.container{
+    background: hsl(244, 38%, 16%);
+    width: min(90vw,800px);
+    margin:  2rem auto;
+    border-radius:  10rem;
+
+}
+/*------------conteudo------------------*/
+.main-box{
+    
+    padding:1rem;
+}
+
+.img-content{
+    width: 100%;
+    height: 12rem;
+
+}
+/*---------titulo-----------------*/
+.title-box{
+    padding: 0.2rem;
+}
+.title-box h1{
+    color: whitesmoke;
+    text-align: center;
+    font-family:"Inter",sans-serif;
+}
+.title-box h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.title-box p{
+    font-family: "Lexend+Deca",sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+     margin: 2rem 0 ;
+}
+/*------caixa de counteudos -----*/
+.content-box,p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.aling-box{
+    display: flex;
+    justify-items: center;
+    align-content:flex-end ;
+    text-align: center;
+    flex-flow: column;
+    
+}
+.content-box{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    font-family: "Lexend+Deca",sans-serif;
+    
+}
+.value-box{
+    display: block; 
+}
+.content-box h2{
+    padding: 0.5rem;
+    color: whitesmoke;
+}
+
+@media(min-width:768px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        background: hsl(244, 38%, 16%);
+        width: min(90vw,800px);
+        margin:  8rem auto;
+        border-radius:  1rem;
+    }
+    .img-box{
+        grid-area: img;
+    }
+    .aling-box{
+        grid-area: texto;
+
+        display: flex;
+        justify-items: center;
+         
+        text-align: center;
+        flex-flow: row;
+    }
+
+    .values-box:hover{
+        color: hsl(277, 64%, 61%);
+    }
+    /*-------------------------------*/
+    .conteiner-grid{
+        grid-template-areas: ' texto img';
+    }
+
+    
+
+    .img-content{
+        width: 99.99%;
+        height: 100%;
+       
+        border-radius:  0 1rem 1rem 0;
+    
+    }
+}
+ 
